@@ -53,3 +53,44 @@ def dekripto(cipher, n, vrimat):
 
 vrimat_global = None
 n_global = None
+
+while True:
+    print("\nGRILLE CIPHER")
+    print("1. Enkriptim")
+    print("2. Dekriptim")
+    print("3. Dil")
+
+    zgjedhja = input("Zgjedh opsionin: ")
+
+    if zgjedhja == "1":
+        n = int(input("Shkruaj madhësinë e matrices (numër çift): "))
+        
+        if n % 2 != 0:
+            print("Duhet numër çift!")
+            continue
+
+        mesazhi = input("Shkruaj mesazhin: ")
+
+        vrimat_global = gjenero_grille(n)
+        n_global = n
+
+        cipher = enkripto(mesazhi, n, vrimat_global)
+
+        print("\nMesazhi i enkriptuar:", cipher)
+
+    elif zgjedhja == "2":
+        if vrimat_global is None:
+            print("Së pari duhet të bësh enkriptim!")
+            continue
+
+        cipher = input("Shkruaj tekstin e enkriptuar: ")
+        mesazhi = dekripto(cipher, n_global, vrimat_global)
+
+        print("\nMesazhi i dekriptuar:", mesazhi)
+
+    elif zgjedhja == "3":
+        print("Programi u mbyll.")
+        break
+
+    else:
+        print("Zgjedhje e pavlefshme!")
