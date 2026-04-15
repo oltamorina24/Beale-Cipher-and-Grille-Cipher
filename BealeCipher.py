@@ -72,3 +72,21 @@ class BealeCipher:
                 result.append("?")
 
         return "".join(result)
+        def main():
+
+    cipher = BealeCipher()
+
+    while True:
+
+        print("\nBEALE CIPHER")
+        print("1. Enkripto")
+        print("2. Dekripto")
+        print("3. Dil")
+
+        choice = input("Zgjedhja: ")
+
+        if choice == "1":
+
+            text = input("Shkruaj mesazhin: ")
+
+            encrypted = cipher.encrypt(text)
