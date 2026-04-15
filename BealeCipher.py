@@ -48,3 +48,27 @@ class BealeCipher:
                 result.append("?")
 
         return " ".join(result)
+    def decrypt(self, ciphertext):
+
+        parts = ciphertext.split()
+
+        result = []
+
+        for part in parts:
+
+            if part == "/":
+                result.append(" ")
+                continue
+
+            if part == "?":
+                result.append("?")
+                continue
+
+            idx = int(part)
+
+            if idx < len(self.reference_words):
+                result.append(self.reference_words[idx][0])
+            else:
+                result.append("?")
+
+        return "".join(result)
