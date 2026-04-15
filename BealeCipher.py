@@ -72,7 +72,7 @@ class BealeCipher:
                 result.append("?")
 
         return "".join(result)
-        def main():
+def main():
 
     cipher = BealeCipher()
 
@@ -91,7 +91,7 @@ class BealeCipher:
 
             encrypted = cipher.encrypt(text)
 
-             print("\nMesazhi i enkriptuar:")
+            print("\nMesazhi i enkriptuar:")
             print(encrypted)
 
         elif choice == "2":
@@ -102,7 +102,7 @@ class BealeCipher:
 
             print("\nMesazhi i dekoduar:")
             print(decrypted.upper())
-             elif choice == "3":
+        elif choice == "3":
             print("\nProgrami perfundoi!")
             break
 
