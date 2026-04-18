@@ -61,6 +61,7 @@ class BealeCipher:
                     result.append("?")
 
         return "".join(result)
+def main():
 
 
 def main():
@@ -87,7 +88,6 @@ def main():
 
             print("\nMesazhi i dekoduar:")
             print(decrypted.upper())
-
         elif choice == "3":
             print("\nProgrami perfundoi!")
             break
