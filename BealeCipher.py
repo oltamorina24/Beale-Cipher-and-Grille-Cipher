@@ -62,9 +62,6 @@ class BealeCipher:
 
         return "".join(result)
 def main():
-
-
-def main():
     cipher = BealeCipher()
 
     while True:
