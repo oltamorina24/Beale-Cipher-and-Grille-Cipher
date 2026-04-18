@@ -124,6 +124,7 @@ Kufizime
 Beale Cipher varet nga teksti referencë (nëse mungon shkronja → përdoret ?)
 Grille Cipher kërkon të njëjtën grille për dekriptim
 Në këtë implementim, grille nuk ruhet në file (nëse programi mbyllet, dekriptimi nuk mund të bëhet)
+
 Përfundim
 
 Ky projekt demonstron:
