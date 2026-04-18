@@ -3,7 +3,6 @@ import random
 class BealeCipher:
 
     def __init__(self):
-
         reference = """
         Ne nje fshat gazmor te vendosur buze nje pylli jetonte nje vogelushe e hirshme
         me nenen e vet ishte shume e bukur kishte nje fytyre te trendafilte porsi nje
@@ -25,17 +24,13 @@ class BealeCipher:
         me vrap rruges udha ishte e gjate por drita e diellit ndriconte mbi
         cdo lule e peme
         """
-
         self.reference_words = reference.lower().split()
 
     def encrypt(self, message):
-
         message = message.lower()
-
         result = []
 
         for char in message:
-
             if char == " ":
                 result.append("/")
                 continue
@@ -48,36 +43,30 @@ class BealeCipher:
                 result.append("?")
 
         return " ".join(result)
+
     def decrypt(self, ciphertext):
-
         parts = ciphertext.split()
-
         result = []
 
         for part in parts:
-
             if part == "/":
                 result.append(" ")
-                continue
-
-            if part == "?":
+            elif part == "?":
                 result.append("?")
-                continue
-
-            idx = int(part)
-
-            if idx < len(self.reference_words):
-                result.append(self.reference_words[idx][0])
             else:
-                result.append("?")
+                idx = int(part)
+                if idx < len(self.reference_words):
+                    result.append(self.reference_words[idx][0])
+                else:
+                    result.append("?")
 
         return "".join(result)
-        def main():
 
+
+def main():
     cipher = BealeCipher()
 
     while True:
-
         print("\nBEALE CIPHER")
         print("1. Enkripto")
         print("2. Dekripto")
@@ -86,23 +75,20 @@ class BealeCipher:
         choice = input("Zgjedhja: ")
 
         if choice == "1":
-
             text = input("Shkruaj mesazhin: ")
-
             encrypted = cipher.encrypt(text)
 
-             print("\nMesazhi i enkriptuar:")
+            print("\nMesazhi i enkriptuar:")
             print(encrypted)
 
         elif choice == "2":
-
             code = input("Jep kodin: ")
-
             decrypted = cipher.decrypt(code)
 
             print("\nMesazhi i dekoduar:")
             print(decrypted.upper())
-             elif choice == "3":
+
+        elif choice == "3":
             print("\nProgrami perfundoi!")
             break
 
