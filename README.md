@@ -1,7 +1,7 @@
 # Beale-Cipher-and-Grille-Cipher
 
-Projekti: Beale Cipher & Grille Cipher
-Përshkrimi
+## Projekti: Beale Cipher & Grille Cipher
+#### Përshkrimi
 
 Ky projekt implementon dy algoritme klasike të kriptografisë:
 
@@ -15,7 +15,7 @@ Si të ekzekutohet programi
 Kërkesat
  Python 3.x
 
-Hapat
+#### Hapat
  1.Klono repository:
 git clone https://github.com/oltamorina24/Beale-Cipher-and-Grille-Cipher.git
 
@@ -25,10 +25,10 @@ git clone https://github.com/oltamorina24/Beale-Cipher-and-Grille-Cipher.git
  python main.py
 
 
-Algoritmet e implementuara
-1. Beale Cipher
+## Algoritmet e implementuara
+### 1. Beale Cipher
 
-Përshkrimi
+#### Përshkrimi
 
 Beale Cipher përdor një tekst referencë si çelës. Çdo shkronjë e mesazhit zëvendësohet me indeksin e një fjale nga teksti që fillon me atë shkronjë.
 
@@ -48,8 +48,8 @@ Output:
 Dekriptim:
 TEST
 
-2. Grille Cipher
-Përshkrimi
+### 2. Grille Cipher
+#### Përshkrimi
 
 Grille Cipher përdor një matricë NxN dhe një maskë me vrima (grille). Mesazhi shkruhet në pozicionet e vrimave dhe grille rrotullohet për të mbushur të gjithë matricën.
 
@@ -69,35 +69,41 @@ HLOXELXXXXXXXX
 Dekriptim:
 hello
 
-Shembuj të ekzekutimit
-Beale Cipher
-BEALE CIPHER
+## Shembuj të ekzekutimit
+### BEALE CIPHER
 1. Enkripto
 2. Dekripto
 
 
 Zgjedhja: 1
+
 Shkruaj mesazhin: hello
+
 Mesazhi i enkriptuar:
 12 45 33 33 78
 
 Zgjedhja: 2
+
 Jep kodin: 12 45 33 33 78
 Mesazhi i dekoduar:
 HELLO
 
-Grille Cipher
+### Grille Cipher
 
-GRILLE CIPHER
-1. Enkriptim
+
+#### 1. Enkriptim
 
 
 Zgjedh opsionin: 1
+
 Madhësia: 4
+
 Mesazhi: hello
+
 Mesazhi i enkriptuar: HLOXELXXXXXXXX
 
 Zgjedh opsionin: 2
+
 Mesazhi i dekriptuar: hello
 
 
@@ -125,7 +131,7 @@ Beale Cipher varet nga teksti referencë (nëse mungon shkronja → përdoret ?)
 Grille Cipher kërkon të njëjtën grille për dekriptim
 Në këtë implementim, grille nuk ruhet në file (nëse programi mbyllet, dekriptimi nuk mund të bëhet)
 
-Përfundim
+## Përfundim
 
 Ky projekt demonstron:
 
