@@ -42,6 +42,14 @@ Për të ekzekutuar programet, ndiqni këto hapa në VS Code:
 - Rezultati i enkriptuar: SXEXKXRXXRXXEXTX
 - Rezultati i dekriptuar: sekret
 
+## Struktura e Projektit
+
+BEALE-CIPHER-AND-GRILLE-CIPHER/  
+│  
+├── .gitignore  
+├── BealeCipher.py    
+├── GrilleCipher.py  
+└── README.md
 ## Sqarime
 - Te Beale Cipher, karakteri "/" përdoret si ndarës për hapësirat.
 - Te Grille Cipher, shkronja "X" shtohet automatikisht në fund të mesazhit për të plotësuar hapësirat boshe të matricës.
